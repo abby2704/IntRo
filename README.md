@@ -2,10 +2,23 @@
 ### Introducción al software estadístico R (IntRo)
 
 Este es un curso que se dicta en la Facultad de Ciencias Sociales de la
-Universidad de la República (Montevideo, Uruguay). El paquete IntRo es
-para auto evaluar los ejercicios del curso.
+Universidad de la República (Montevideo, Uruguay). El paquete IntRo fue
+desarrollado para este curso. Es para que los estudiantes puedan auto
+evaluarse los ejercicios del curso.
 
 Hay un instructivo de uso aquí. <br /> <br />
+
+##### **Instalación**
+
+El paquete está en desarrollo por lo que únicamente se puede instalar
+desde [GitHub](https://cran.r-project.org/) de la siguiente manera:
+
+``` r
+if (!require("devtools")) install.packages("devtools")
+devtools::install_github("Nicolas-Schmidt/IntRo")
+```
+
+<br /> <br />
 
 ##### **Docentes**
 
