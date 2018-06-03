@@ -34,7 +34,7 @@ El docente del curso es Nicolás Schmidt. Mail: <nicoschla@gmail.com>,
 print("Bienvenidos al curso IntRo edición 2018")
 ```
 
-<center>![](https://raw.githubusercontent.com/Nicolas-Schmidt/IntRo/master/animation.gif)</center>
+<center>![alt-text](https://raw.githubusercontent.com/Nicolas-Schmidt/IntRo/master/animation.gif)</center>
 
 
 

@@ -22,5 +22,5 @@ print("Bienvenidos al curso IntRo edición 2018")
 ```
 
 <center>
-![](https://raw.githubusercontent.com/Nicolas-Schmidt/IntRo/master/animation.gif)
+![alt-text](https://raw.githubusercontent.com/Nicolas-Schmidt/IntRo/master/animation.gif)
 </center>
