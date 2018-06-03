@@ -22,5 +22,5 @@ print("Bienvenidos al curso IntRo edición 2018")
 ```
 
 <center>
-![](/Users/usuario/Google%20Drive/Cursos/Cursos%20R.%20Educacion%20Permanente/intRo/IntRo/animation.gif)
+![](https://raw.githubusercontent.com/Nicolas-Schmidt/IntRo/master/animation.gif)
 </center>
