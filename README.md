@@ -6,17 +6,14 @@ Universidad de la República (Montevideo, Uruguay). El paquete IntRo fue
 desarrollado para este curso. Es para que los estudiantes puedan auto
 evaluarse los ejercicios del curso.
 
-Hay un instructivo de uso aquí. <br /> <br />
+Hay un instructivo de uso aquí.
 
-##### **Instalación**
+Ejercicios:
 
-El paquete está en desarrollo por lo que únicamente se puede instalar
-desde [GitHub](https://cran.r-project.org/) de la siguiente manera:
-
-``` r
-if (!require("devtools")) install.packages("devtools")
-devtools::install_github("Nicolas-Schmidt/IntRo")
-```
+1.  Módulo vectores
+2.  Módulo matrices
+3.  Módulo data.frame
+4.  Módulo listas
 
 <br /> <br />
 
