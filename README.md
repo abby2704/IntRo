@@ -15,9 +15,9 @@ Ejercicios:
 3.  Módulo data.frame
 4.  Módulo listas
 
-<br /> <br />
+<br />
 
-##### **Docentes**
+#### **Docentes**
 
 El docente responsable del curso es Juan Andrés Moraes. Mail:
 <juan.a.moraes.1@nd.edu>  
