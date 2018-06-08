@@ -6,7 +6,8 @@ Universidad de la República (Montevideo, Uruguay). El paquete `IntRo`
 fue desarrollado para este curso. Es para que los estudiantes puedan
 auto evaluarse los ejercicios del curso.
 
-Hay un instructivo de uso aquí.
+Hay un instructivo de uso Hay un instructivo de uso
+[aquí](https://github.com/Nicolas-Schmidt/IntRo/blob/master/Ejercicios/Instructivo_IntRo.pdf).
 
 Ejercicios:
 
