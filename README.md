@@ -1,10 +1,12 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-### Introducción al software estadístico R (IntRo)
+### Introducción al software estadístico R. `IntRo`
+
+------------------------------------------------------------------------
 
 Este es un curso que se dicta en la Facultad de Ciencias Sociales de la
-Universidad de la República (Montevideo, Uruguay). El paquete IntRo fue
-desarrollado para este curso. Es para que los estudiantes puedan auto
-evaluarse los ejercicios del curso.
+Universidad de la República (Montevideo, Uruguay). El paquete `IntRo`
+fue desarrollado para este curso. Es para que los estudiantes puedan
+auto evaluarse los ejercicios del curso.
 
 Hay un instructivo de uso aquí.
 
