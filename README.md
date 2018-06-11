@@ -4,7 +4,7 @@
 Este es un curso que se dicta en la Facultad de Ciencias Sociales de la
 Universidad de la República (Montevideo, Uruguay). El paquete `IntRo`
 fue desarrollado para este curso. Es para que los estudiantes puedan
-auto evaluarse los ejercicios del curso.
+autoevaluarse los ejercicios del curso.
 
 Hay un instructivo de uso
 [aquí](https://github.com/Nicolas-Schmidt/IntRo/blob/master/Ejercicios/Instructivo_IntRo.pdf).
