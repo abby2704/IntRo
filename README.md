@@ -2,8 +2,6 @@
 Introducción al software estadístico R <img src="logo.png" style="margin-left:10px;margin-bottom:5px;" width="120" align="right"></a>
 -------------------------------------------------------------------------------------------------------------------------------------
 
-------------------------------------------------------------------------
-
 Este es un curso que se dicta en la Facultad de Ciencias Sociales de la
 Universidad de la República (Montevideo, Uruguay). El paquete `IntRo`
 fue desarrollado para este curso. Es para que los estudiantes puedan
