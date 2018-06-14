@@ -14,7 +14,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# Introducción al software estadístico R <img src="logo.png" style="margin-left:10px;margin-bottom:5px;" width="120" align="right"></a>
+# Introducción al software estadístico R <img src="logo.png" style="margin-left:10px;margin-bottom:5px;" width="160" align="right"></a>
 
 
 
