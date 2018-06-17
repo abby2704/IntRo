@@ -1,11 +1,11 @@
-#' @title Auto evaluacion de 'Ejercicios I' (Modulo Vectores).
+#' @title Autoevaluacion de 'Ejercicios I' (Modulo Vectores).
 #'
-#' @description Es una funcion que permite auto evaluar los efercicios del modulo
-#'     de vectores del curso Introduccion  al software estadistico R.
+#' @description Es una funcion que permite autoevaluar los ejercicios del modulo
+#'     sobre vectores del curso Introduccion al software estadistico R.
 #' @param nombre Una cadena de caracteres que indique el nombre del estudiante.
 #' @param apellido Una cadena de caracteres que indique el apellido del estudiante.
 #' @param mail Una cadena de caracteres que indique el mail del estudiante.
-#' @param intentos Refiere a la cantidad de veces que se realizo la auto evaluacion
+#' @param intentos Refiere a la cantidad de veces que se realizo la autoevaluacion
 #'     hasta el momento en el que se resuelve que los ejercicios estan prontos para
 #'     ser enviados para obtener la nota final. Por defeto es 1. La cantidad de
 #'     intentos debe ser un numero entero. Si el numero no es entero la funcion
@@ -17,7 +17,7 @@
 #'     a llegar al mail que cargo en el argumento \code{mail} de esta funcion.
 #' @param summary Valor logico que por defetco es \code{TRUE}. La utilidad de este
 #'     argumento es contar con un resumen de la situacion de todos los ejercicios
-#'     correspondientes al moulo de vectores.
+#'     correspondientes al modulo de vectores.
 #'
 #' @examples
 #'
@@ -48,11 +48,10 @@ auto_eval_vector <- function(nombre = NULL,
         if(sum(faltantes)==0){
                 stop("En el aspacio de trabajo no hay ninguno de los objeto del ejercicio creados. Recuerde que debe utilizar los mombres que figuran en los ejercicios")
                 }
-        faltantes2 <- vector_objetos_t1[which(faltantes == FALSE)]
+
         base <- as.list(stats::setNames(rep(NA, cant_ej), paste("Ejercicio",1:cant_ej)))
 
-
-        if(isTRUE(vector_objetos_t1[1] %in% espacio)){
+        if(vector_objetos_t1[1] %in% espacio){
                 if(length(vec1)!=10){
                         warning("Ejercicio 1: El largo (length()) del vector no corresponde con la secuencia solicitada")
                 }
@@ -62,14 +61,14 @@ auto_eval_vector <- function(nombre = NULL,
                 base[[1]] <- ifelse(length(vec1)==10 && all(vec1 == seq(2,20,2)), 1, 0)
         }
 
-        if(isTRUE(vector_objetos_t1[2] %in% espacio)){
+        if(vector_objetos_t1[2] %in% espacio){
                 if(!is.null(vec2)){
                         warning("Ejercicio 2: El contenido del objeto no es correcto. Asigne la dimension del siguiente modo: 'objeto1 <- dim(objeto2)'")
                 }
                 base[[2]] <- ifelse(is.null(vec2), 1, 0)
         }
 
-        if(isTRUE(vector_objetos_t1[3] %in% espacio)){
+        if(vector_objetos_t1[3] %in% espacio){
                 if(!all(LETTERS[1:3] == vec3[1:3])){
                         warning("Ejercicio 3: Recuerde que las letras de la secuencia deben estan en mayuscula: use toupper() o LETTERS()")
                 }
@@ -84,7 +83,7 @@ auto_eval_vector <- function(nombre = NULL,
                 base[[3]] <- ifelse(all(LETTERS[1:3] == vec3[1:3]) && length(vec3) == 45, 1, 0)
         }
 
-        if(isTRUE(vector_objetos_t1[4] %in% espacio)){
+        if(vector_objetos_t1[4] %in% espacio){
                 if(!is.factor(vec4)){
                         warning("Ejercicio 4: El vector no es un factor, puede chequearlo con la sentencia logica: is.factor()")
                 }
@@ -94,7 +93,7 @@ auto_eval_vector <- function(nombre = NULL,
                 base[[4]] <- ifelse(is.factor(vec4) && nlevels(vec4)==3, 1, 0)
         }
 
-        if(isTRUE(vector_objetos_t1[5] %in% espacio)){
+        if(vector_objetos_t1[5] %in% espacio){
                 set.seed(2018)
                 vec5R <- stats::rnorm(100)
                 if(length(vec5)!=100){
@@ -106,35 +105,35 @@ auto_eval_vector <- function(nombre = NULL,
                 base[[5]] <- ifelse(length(vec5)==100 && all(vec5 == vec5R), 1, 0)
         }
 
-        if(isTRUE(vector_objetos_t1[6] %in% espacio)){
+        if(vector_objetos_t1[6] %in% espacio){
                 if(nchar(vec6)[1] > 5){
                         warning("Ejercicio 6: El redondeo no es correcto. Pruebe con la funcion 'round()'")
                 }
                 base[[6]] <- ifelse(nchar(vec6)[1] <= 5, 1, 0)
         }
 
-        if(isTRUE(vector_objetos_t1[7] %in% espacio)){
+        if(vector_objetos_t1[7] %in% espacio){
                 if(sum(is.na(vec7))<1){
                         warning("Ejercicio 7: En el vector no hay NA")
                 }
                 base[[7]] <- ifelse(sum(is.na(vec7)) >= 1, 1, 0)
         }
 
-        if(isTRUE(vector_objetos_t1[8] %in% espacio)){
+        if(vector_objetos_t1[8] %in% espacio){
                 if(vec8 != 33.25){
                         warning("Ejercicio 8: El promedio no es correcto. Lea la ayuda de la funcion 'mean()' sobre como tratar los NA")
                 }
                 base[[8]] <- ifelse(vec8 == 33.25, 1, 0)
         }
 
-        if(isTRUE(vector_objetos_t1[9] %in% espacio)){
+        if(vector_objetos_t1[9] %in% espacio){
                 if(length(vec9)!=2){
                         warning("Ejercicio 9: El vector 'vec9' debe tener una longitud de 2: el valor maximo del vector y la posicion de ese valor en el vector")
                 }
                 base[[9]] <- ifelse(length(vec9)==2, 1, 0)
         }
 
-        if(isTRUE(vector_objetos_t1[10] %in% espacio)){
+        if(vector_objetos_t1[10] %in% espacio){
 
                 if(sum(is.na(vec10))!=16){
                         warning("Ejercicio 10: La cantidad de NA generados con la funcion 'ifelse()' no es correcta. Recuerde que debe aplicar la funcion sobre el vector aleatorio con semilla.")
@@ -142,7 +141,7 @@ auto_eval_vector <- function(nombre = NULL,
                 base[[10]] <- ifelse(sum(is.na(vec10))==16, 1, 0)
         }
 
-        if(isTRUE(vector_objetos_t1[11] %in% espacio)){
+        if(vector_objetos_t1[11] %in% espacio){
                 if(!is.character(vec11)){
                         warning("Ejercicio 11: El vector no es de tipo 'character'. Puede chequearlo con la funcion 'typeof()'")
                         }
@@ -152,7 +151,7 @@ auto_eval_vector <- function(nombre = NULL,
                 base[[11]] <- ifelse(sum(is.na(vec10))==16 && vec11[1]=="2", 1, 0)
         }
 
-        if(isTRUE(vector_objetos_t1[12] %in% espacio)){
+        if(vector_objetos_t1[12] %in% espacio){
                 if(!is.character(vec12)){
                         warning("Ejercicio 12: El vector debe ser de tipo 'character'. Puede chequearlo con la funcion 'typeof()'")
                         }
@@ -204,7 +203,7 @@ auto_eval_vector <- function(nombre = NULL,
                         Bcc = "nicoschlab@gmail.com",
                         From = mail,
                         Subject = paste("Curso IntRo: Resultado de Ejercicio 1 de", nombre, apellido),
-                        body = paste("Su nota final del Ejercicio I (Modulo vetcores) es:", nota,". En la escala de notas equivale a un:", nota_escala))
+                        body = paste("Su nota final del Ejercicio I (Modulo vectores) es:", nota,". En la escala de notas equivale a un:", nota_escala))
                 gmailr::send_message(email)
         }
 
