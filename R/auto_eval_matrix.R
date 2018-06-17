@@ -51,7 +51,7 @@ auto_eval_matrix <- function(nombre = NULL,
         }
 
         base <- as.list(stats::setNames(rep(NA, cant_ej), paste("Ejercicio",1:cant_ej)))
-        # EJERCICIO 1
+
         if(vector_objetos[1] %in% espacio){
                 if(sum(dim(mat1))!=2){
                         warning("Ejercicio 1: La dimension de la matriz no es correcta.")
@@ -61,7 +61,6 @@ auto_eval_matrix <- function(nombre = NULL,
                 }
                 base[[1]] <- ifelse(sum(dim(mat1)) == 2 && is.integer(mat1), 1, 0)
         }
-        # EJERCICIO 2
         if(vector_objetos[2] %in% espacio){
                 if(sum(dim(mat2))!=7){
                         warning("Ejercicio 2: La dimension de la matriz no es correcta.")
@@ -77,7 +76,6 @@ auto_eval_matrix <- function(nombre = NULL,
                 }
                 base[[2]] <- ifelse(all(mat2 %in% 1:12) && !is.null(dimnames(mat2)) && ncol(mat2)==4, 1, 0)
         }
-        # EJERCICIO 3
         if(vector_objetos[3] %in% espacio){
                 if(sum(dim(mat3))!=4){
                         warning("Ejercicio 3: La dimension de la matriz no es correcta.")
@@ -87,7 +85,6 @@ auto_eval_matrix <- function(nombre = NULL,
                 }
                 base[[3]] <- ifelse(sum(dim(mat3)) == 4 && sum(is.na(mat3)) == 4, 1, 0)
         }
-        # EJERCICIO 4
         if(vector_objetos[4] %in% espacio){
                 if(!all(c(2.5, 6.5, 10.5) %in% mat4)){
                         warning("Ejercicio 4: Los valores promedio por fila no son correctos, busque en la ayuda de la funcion addmargins o apply.")
@@ -97,7 +94,6 @@ auto_eval_matrix <- function(nombre = NULL,
                 }
                 base[[4]] <- ifelse(all(c(2.5, 6.5, 10.5) %in% mat4) && length(colnames(mat4)) == 5, 1, 0)
         }
-        # EJERCICIO 5
         if(vector_objetos[5] %in% espacio){
                 if(sum(dim(mat5))!=20){
                         warning("Ejercicio 5: La dimension de la matriz no es correcta.")
@@ -113,7 +109,6 @@ auto_eval_matrix <- function(nombre = NULL,
                 }
                 base[[5]] <- ifelse(sum(mat5 == 1) == 45 && sum(mat5 == 0) == 45 && sum(mat5 == 10) == 10, 1, 0)
         }
-        # EJERCICIO 6
         if(vector_objetos[6] %in% espacio){
                 if(sum(dim(mat6))!=20){
                         warning("Ejercicio 6: La dimension de la matriz no es correcta.")
@@ -130,8 +125,6 @@ auto_eval_matrix <- function(nombre = NULL,
                 }
                 base[[6]] <- ifelse(contenido && length(unique(mat6))==100, 1, 0)
         }
-
-        # EJERCICIO 7
         if(vector_objetos[7] %in% espacio){
                 if(!is.matrix(mat7)){
                         warning("Ejercicio 7: El objeto 'mat7' debe ser una matriz.")
