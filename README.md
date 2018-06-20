@@ -14,7 +14,8 @@ Ejercicios:
 
 1.  Módulo
     [vectores](https://github.com/Nicolas-Schmidt/IntRo/blob/master/Ejercicios/Ejercicios_Modulo_vectores.pdf)
-2.  Módulo matrices
+2.  Módulo
+    [matrices](https://github.com/Nicolas-Schmidt/IntRo/blob/master/Ejercicios/Ejercicios_Modulo_matrices.pdf)
 3.  Módulo data.frame
 4.  Módulo listas
 
