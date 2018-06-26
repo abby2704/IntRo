@@ -52,7 +52,6 @@ auto_eval_df <- function(nombre = NULL,
 
         base <- as.list(stats::setNames(rep(NA, cant_ej), paste("Ejercicio", 1:cant_ej)))
 
-        # ejercicio 1
         if(vector_objetos[1] %in% espacio){
                 if(sum(dim(df1))!=152){
                         warning("Ejercicio 1: La dimension del data.frame no es correcta.")
@@ -65,7 +64,6 @@ auto_eval_df <- function(nombre = NULL,
                 }
                 base[[1]] <- ifelse(sum(dim(df1)) == 152 && is.character(df1[,1]) && is.factor(df1[,2]), 1, 0)
         }
-        # ejercicio 2
         if(vector_objetos[2] %in% espacio){
                 if(sum(dim(df2))!= 52){
                         warning("Ejercicio 2: La dimension del data.frame no es correcta.")
@@ -76,7 +74,6 @@ auto_eval_df <- function(nombre = NULL,
 
                 base[[2]] <- ifelse(sum(dim(df2))== 52 && length(levels(df2[,2]))== 16, 1, 0)
         }
-        # ejercicio 3
         if(vector_objetos[3] %in% espacio){
                 if(sum(dim(df3))!= 53){
                         warning("Ejercicio 3: La dimension del data.frame no es correcta.")
@@ -89,7 +86,6 @@ auto_eval_df <- function(nombre = NULL,
                 }
                 base[[3]] <- ifelse(sum(dim(df3))==53 && names(df3)[3]=="speedMM" && all(abs(df3[,1]-mean(df3[,1]))==df3[,3]), 1, 0)
         }
-        # ejercicio 4
         if(vector_objetos[4] %in% espacio){
                 if(sum(dim(df4))!= 53){
                         warning("Ejercicio 4: La dimension del data.frame no es correcta.")
@@ -99,7 +95,6 @@ auto_eval_df <- function(nombre = NULL,
                 }
                 base[[4]] <- ifelse(sum(dim(df4))== 53 && sum(is.na(df4$dist))==28, 1, 0)
         }
-        # ejercicio 5
         if(vector_objetos[5] %in% espacio){
                 if(sum(dim(df5))!=304){
                         warning("Ejercicio 5: La dimension del data.frame no es correcta.")
@@ -125,7 +120,6 @@ auto_eval_df <- function(nombre = NULL,
                                             is.logical(df5[,4]) &&
                                             all(is.na(df5[seq(2, 300, 2),4])) , 1, 0)
         }
-        # ejercicio 6
         if(vector_objetos[6] %in% espacio){
                 if(sum(dim(df6))!= 25){
                         warning("Ejercicio 6: La dimension del data.frame no es correcta.")
@@ -135,7 +129,6 @@ auto_eval_df <- function(nombre = NULL,
                 }
                 base[[6]] <- ifelse(sum(dim(df6))== 53 && sum(is.na(df6))== 0, 1, 0)
         }
-        # ejercicio 7
         if(vector_objetos[7] %in% espacio){
                 if(sum(dim(df7))!= 31){
                         warning("Ejercicio 7: La dimension del data.frame no es correcta.")
@@ -150,7 +143,6 @@ auto_eval_df <- function(nombre = NULL,
                                             all(names(df7) == paste0("Columna", 1:5)) &&
                                             sum(apply(is.na(df7), 1, sum)==3)==0, 1, 0)
         }
-        # ejercicio 8
         if(vector_objetos[8] %in% espacio){
                 if(any(rownames(df8)==rownames(datasets::mtcars))){
                         warning("Ejercicio 8: Las filas no deben estar nombradas.")
