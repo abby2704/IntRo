@@ -100,7 +100,7 @@ auto_eval_df <- function(nombre = NULL,
                         warning("Ejercicio 5: La dimension del data.frame no es correcta.")
                 }
                 if(!is.integer(df5[,1])){
-                        warning("Ejercicio 5: La primer variavle debe contener numeros estrictamente enteros.")
+                        warning("Ejercicio 5: La primer variable debe contener numeros estrictamente enteros.")
                 }
                 if(length(levels(df5[,2]))!=5){
                         warning("Ejercicio 5: Los niveles del factor deben ser 5.")
