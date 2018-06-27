@@ -17,7 +17,7 @@
 #'     a llegar al mail que cargo en el argumento \code{mail} de esta funcion.
 #' @param summary Valor logico que por defetco es \code{TRUE}. La utilidad de este
 #'     argumento es contar con un resumen de la situacion de todos los ejercicios
-#'     correspondientes al moulo de matrices.
+#'     correspondientes al modulo de matrices.
 #'
 #' @examples
 #'

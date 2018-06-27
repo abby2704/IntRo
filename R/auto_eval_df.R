@@ -1,4 +1,4 @@
-#' @title Autoevaluacion de 'Ejercicios II' (Modulo data.frame).
+#' @title Autoevaluacion de 'Ejercicios III' (Modulo data.frame).
 #'
 #' @description Es una funcion que permite autoevaluar los ejercicios del modulo
 #'     de data.frame del curso Introduccion al software estadistico R.
@@ -17,7 +17,7 @@
 #'     a llegar al mail que cargo en el argumento \code{mail} de esta funcion.
 #' @param summary Valor logico que por defetco es \code{TRUE}. La utilidad de este
 #'     argumento es contar con un resumen de la situacion de todos los ejercicios
-#'     correspondientes al moulo de data.frame.
+#'     correspondientes al modulo de data.frame.
 #'
 #' @examples
 #'
