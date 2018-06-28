@@ -127,7 +127,7 @@ auto_eval_df <- function(nombre = NULL,
                 if(sum(is.na(df6))!= 0){
                         warning("Ejercicio 6: En el data.frame no debe haber valores NA.")
                 }
-                base[[6]] <- ifelse(sum(dim(df6))== 53 && sum(is.na(df6))== 0, 1, 0)
+                base[[6]] <- ifelse(sum(dim(df6))==25 && sum(is.na(df6))==0, 1, 0)
         }
         if(vector_objetos[7] %in% espacio){
                 if(sum(dim(df7))!= 31){
