@@ -109,7 +109,7 @@ auto_eval_df <- function(nombre = NULL,
                         warning("Ejercicio 5: Las palabras de esta variable no pueden tener menos de 4 letras.")
                 }
                 if(!is.logical(df5[,4])){
-                        warning("Ejercicio 5: Las palabras de esta variable no pueden tener menos de 4 letras.")
+                        warning("Ejercicio 5: Esta columna debe contener valores logicos.")
                 }
                 if(!all(is.na(df5[seq(2, 300, 2),4]))){
                         warning("Ejercicio 5: Los valores NA que debe contener esta variable no son correctos.")
