@@ -105,7 +105,7 @@ auto_eval_df <- function(nombre = NULL,
                 if(length(levels(df5[,2]))!=5){
                         warning("Ejercicio 5: Los niveles del factor deben ser 5.")
                 }
-                if(any(nchar(unique(df5[,3])[1:5]) < 4)){
+                if(any(nchar(unique(as.character(df5[,3]))[1:5]) < 4)){
                         warning("Ejercicio 5: Las palabras de esta variable no pueden tener menos de 4 letras.")
                 }
                 if(!is.logical(df5[,4])){
@@ -116,7 +116,7 @@ auto_eval_df <- function(nombre = NULL,
                 }
                 base[[5]] <- ifelse(sum(dim(df5))==304 &&
                                             is.integer(df5[,1]) &&
-                                            any(nchar(unique(df5[,3])[1:5]) > 3) &&
+                                            any(nchar(unique(as.character(df5[,3]))[1:5]) > 3) &&
                                             is.logical(df5[,4]) &&
                                             all(is.na(df5[seq(2, 300, 2),4])) , 1, 0)
         }
