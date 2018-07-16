@@ -91,7 +91,7 @@ auto_eval_list <- function(nombre = NULL,
                                         warning("Ejercicio 2: El nombre de las entradas de lista no son correctos.")
                                 }
                                 if(!all(c(lista2[[4]], lista2[[5]], lista2[[6]]) %in% c(5.01, 5.94, 6.59))){
-                                        warning("Ejercicio 2: Alguno de los valores promedio de las no es correcto.")
+                                        warning("Ejercicio 2: Alguno de los valores promedio no es correcto.")
                                 }
                                 base[[2]] <- ifelse(all(unique(c(sapply(lista2[1:3], dim))) %in% c(50,5)) &&
                                                             all(unique(c(sapply(lista2[1:3], colnames))) == names(datasets::iris)) &&
