@@ -128,7 +128,7 @@ auto_eval_list <- function(nombre = NULL,
                                 base[[3]] <- 0
                         }
                 } else{
-                        warning("Ejercicio 3: El objeto 'lista2' debe ser de tipo 'list'.")
+                        warning("Ejercicio 3: El objeto 'lista3' debe ser de tipo 'list'.")
                         base[[3]] <- 0
                 }
         }
@@ -149,7 +149,7 @@ auto_eval_list <- function(nombre = NULL,
                                  base[[4]] <- 0
                          }
                  } else{
-                         warning("Ejercicio 4: El objeto 'lista2' debe ser de tipo 'list'.")
+                         warning("Ejercicio 4: El objeto 'lista4' debe ser de tipo 'list'.")
                          base[[4]] <- 0
                  }
          }
@@ -166,7 +166,7 @@ auto_eval_list <- function(nombre = NULL,
                                  base[[5]] <- 0
                          }
                  } else{
-                         warning("Ejercicio 5: El objeto 'lista2' debe ser de tipo 'list'.")
+                         warning("Ejercicio 5: El objeto 'lista5' debe ser de tipo 'list'.")
                          base[[5]] <- 0
                  }
          }
@@ -187,7 +187,7 @@ auto_eval_list <- function(nombre = NULL,
                                  base[[6]] <- 0
                          }
                  } else{
-                         warning("Ejercicio 6: El objeto 'lista2' debe ser de tipo 'list'.")
+                         warning("Ejercicio 6: El objeto 'lista6' debe ser de tipo 'list'.")
                          base[[6]] <- 0
                  }
          }
