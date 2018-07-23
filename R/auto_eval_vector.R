@@ -158,9 +158,13 @@ auto_eval_vector <- function(nombre = NULL,
                 if(length(vec12)!=1){
                         warning("Ejercicio 12: El largo del vector no es correcto. El vector 'vec1' tiene 10 elementos y el 'vec12' debe tener 1 solo elemento")
                         }
-                if(substr(vec12,2,3)!="-4"){
-                        warning("Ejercicio 12: Recuerde que los numeros deben estar separados por un guion ('-')")
+                if(length(vec12)!=1){
+                        warning("Ejercicio 12: El largo del vector no es correcto. El vector 'vec1' tiene 10 elementos y el 'vec12' debe tener 1 solo elemento")
+                }else{
+                        if(substr(vec12,2,3)!="-4"){
+                                warning("Ejercicio 12: Recuerde que los numeros deben estar separados por un guion ('-')")
                         }
+                }
                 base[[12]] <- ifelse(length(vec12)==1 && substr(vec12,2,2)=="-", 1, 0)
         }
         base1 <- do.call(rbind, base)

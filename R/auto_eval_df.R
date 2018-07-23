@@ -53,105 +53,159 @@ auto_eval_df <- function(nombre = NULL,
         base <- as.list(stats::setNames(rep(NA, cant_ej), paste("Ejercicio", 1:cant_ej)))
 
         if(vector_objetos[1] %in% espacio){
-                if(sum(dim(df1))!=152){
-                        warning("Ejercicio 1: La dimension del data.frame no es correcta.")
+                if(is.data.frame(df1)){
+                        if(sum(dim(df1))!=152){
+                                warning("Ejercicio 1: La dimension del data.frame no es correcta.")
+                        }
+                        if(!is.character(df1[,1])){
+                                warning("Ejercicio 1: El tipo de dato de la variable 1 no es correcto. Debe ser de tipo character.")
+                        }
+                        if(!is.factor(df1[,2])){
+                                warning("Ejercicio 1: El tipo de dato de la variable 2 no es correcto. Debe ser de tipo factor.")
+                        }
+                        base[[1]] <- ifelse(sum(dim(df1)) == 152 && is.character(df1[,1]) && is.factor(df1[,2]), 1, 0)
+                }else{
+                        warning("Ejercicio 1: El objeto 'df1' no es de tipo data.frame.")
+                        base[[1]] <- 0
                 }
-                if(!is.character(df1[,1])){
-                        warning("Ejercicio 1: El tipo de dato de la variable 1 no es correcto. Debe ser de tipo character.")
-                }
-                if(!is.factor(df1[,2])){
-                        warning("Ejercicio 1: El tipo de dato de la variable 2 no es correcto. Debe ser de tipo factor.")
-                }
-                base[[1]] <- ifelse(sum(dim(df1)) == 152 && is.character(df1[,1]) && is.factor(df1[,2]), 1, 0)
         }
-        if(vector_objetos[2] %in% espacio){
-                if(sum(dim(df2))!= 52){
-                        warning("Ejercicio 2: La dimension del data.frame no es correcta.")
-                }
-                if(length(levels(df2[,2]))!= 16) {
-                        warning("Ejercicio 2: Los niveles del factor no son los correcto. Recuerde que la variable es .")
-                }
 
-                base[[2]] <- ifelse(sum(dim(df2))== 52 && length(levels(df2[,2]))== 16, 1, 0)
+        if(vector_objetos[2] %in% espacio){
+                if(is.data.frame(df2)){
+                        if(sum(dim(df2))!= 52){
+                                warning("Ejercicio 2: La dimension del data.frame no es correcta.")
+                        }
+                        if(length(levels(df2[,2]))!= 16) {
+                                warning("Ejercicio 2: Los niveles del factor no son los correcto. Recuerde que la variable original era mas grande.")
+                        }
+
+                        base[[2]] <- ifelse(sum(dim(df2))== 52 && length(levels(df2[,2]))== 16, 1, 0)
+                }else{
+                        warning("Ejercicio 2: El objeto 'df2' no es de tipo data.frame.")
+                        base[[2]] <- 0
+                }
         }
+
         if(vector_objetos[3] %in% espacio){
-                if(sum(dim(df3))!= 53){
-                        warning("Ejercicio 3: La dimension del data.frame no es correcta.")
+                if(is.data.frame(df3)){
+                        if(sum(dim(df3))!= 53){
+                                warning("Ejercicio 3: La dimension del data.frame no es correcta.")
+                        }
+                        if(names(df3)[3]!="speedMM"){
+                                warning("Ejercicio 3: El nombre de la tercer variableno es correcto.")
+                        }
+                        if(any(abs(df3[,1] - mean(df3[,1])) != df3[,3]))  {
+                                warning("Ejercicio 3: El calculo de la variable no es correcto. Deve restar el valor de la media a cada valor. Y ese valor debe estar en valor absoluto")
+                        }
+                        base[[3]] <- ifelse(sum(dim(df3))==53 &&
+                                                    names(df3)[3]=="speedMM" &&
+                                                    all(abs(df3[,1]-mean(df3[,1]))==df3[,3]), 1, 0)
+                }else{
+                        warning("Ejercicio 3: El objeto 'df3' no es de tipo data.frame.")
+                        base[[3]] <- 0
                 }
-                if(names(df3)[3]!="speedMM"){
-                        warning("Ejercicio 3: El nombre de la tercer variableno es correcto.")
-                }
-                if(all(abs(df3[,1] - mean(df3[,1])) != df3[,3]))  {
-                        warning("Ejercicio 3: El calculo de la variable no es correcto. Deve restar el valor de la media a cada valor. Y ese valor debe estar en valor absoluto")
-                }
-                base[[3]] <- ifelse(sum(dim(df3))==53 && names(df3)[3]=="speedMM" && all(abs(df3[,1]-mean(df3[,1]))==df3[,3]), 1, 0)
         }
+
         if(vector_objetos[4] %in% espacio){
-                if(sum(dim(df4))!= 53){
-                        warning("Ejercicio 4: La dimension del data.frame no es correcta.")
+                if(is.data.frame(df4)){
+                        if(sum(dim(df4))!= 53){
+                                warning("Ejercicio 4: La dimension del data.frame no es correcta.")
+                        }
+                        if(sum(is.na(df4$dist)) != 28){
+                                warning("Ejercicio 4: La cantidad de valores NA no es correcta.")
+                        }
+                        base[[4]] <- ifelse(sum(dim(df4))==53 && sum(is.na(df4$dist))==28, 1, 0)
+                }else{
+                        warning("Ejercicio 4: El objeto 'df4' no es de tipo data.frame.")
+                        base[[4]] <- 0
                 }
-                if(sum(is.na(df4$dist)) != 28){
-                        warning("Ejercicio 4: La cantidad de valores NA no es correcta.")
-                }
-                base[[4]] <- ifelse(sum(dim(df4))== 53 && sum(is.na(df4$dist))==28, 1, 0)
         }
+
         if(vector_objetos[5] %in% espacio){
-                if(sum(dim(df5))!=304){
-                        warning("Ejercicio 5: La dimension del data.frame no es correcta.")
+                if(is.data.frame(df5)){
+                        if(sum(dim(df5))!=304){
+                                warning("Ejercicio 5: La dimension del data.frame no es correcta.")
+                        }
+                        if(!is.integer(df5[,1])){
+                                warning("Ejercicio 5: La primer variable debe contener numeros estrictamente enteros.")
+                        }
+                        if(length(levels(df5[,2]))!=5){
+                                warning("Ejercicio 5: Los niveles del factor de la segunda columna deben ser 5.")
+                        }
+                        if(length(unique(df5[,3])) < 5){
+                                warning("Ejercicio 5: Recuerde que la columna 3 del 'df5' debe contener al menos 5 palabras.")
+                        }else{
+                                if(all(nchar(unique(as.character(df5[,3]))[1:5]) < 4)){
+                                        warning("Ejercicio 5: Las palabras de de la tercer variable no pueden tener menos de 4 letras.")
+                                }
+                        }
+                        if(!is.logical(df5[,4])){
+                                warning("Ejercicio 5: La cuarta columna debe contener valores logicos.")
+                        }
+                        if(!all(is.na(df5[seq(2, 300, 2),4]))){
+                                warning("Ejercicio 5: Los valores NA que debe contener la cuarta variable no son correctos.")
+                        }
+                        base[[5]] <- ifelse(sum(dim(df5))==304 &&
+                                                is.integer(df5[,1]) &&
+                                                length(unique(df5[,3])) > 4 &&
+                                                all(nchar(as.character(df5[,3])[1:5]) > 3) &&
+                                                is.logical(df5[,4]) &&
+                                                all(is.na(df5[seq(2, 300, 2),4])) , 1, 0)
+                }else{
+                        warning("Ejercicio 5: El objeto 'df5' no es de tipo data.frame.")
+                        base[[5]] <- 0
                 }
-                if(!is.integer(df5[,1])){
-                        warning("Ejercicio 5: La primer variable debe contener numeros estrictamente enteros.")
-                }
-                if(length(levels(df5[,2]))!=5){
-                        warning("Ejercicio 5: Los niveles del factor deben ser 5.")
-                }
-                if(any(nchar(unique(as.character(df5[,3]))[1:5]) < 4)){
-                        warning("Ejercicio 5: Las palabras de esta variable no pueden tener menos de 4 letras.")
-                }
-                if(!is.logical(df5[,4])){
-                        warning("Ejercicio 5: Esta columna debe contener valores logicos.")
-                }
-                if(!all(is.na(df5[seq(2, 300, 2),4]))){
-                        warning("Ejercicio 5: Los valores NA que debe contener esta variable no son correctos.")
-                }
-                base[[5]] <- ifelse(sum(dim(df5))==304 &&
-                                            is.integer(df5[,1]) &&
-                                            any(nchar(unique(as.character(df5[,3]))[1:5]) > 3) &&
-                                            is.logical(df5[,4]) &&
-                                            all(is.na(df5[seq(2, 300, 2),4])) , 1, 0)
         }
+
         if(vector_objetos[6] %in% espacio){
-                if(sum(dim(df6))!= 25){
-                        warning("Ejercicio 6: La dimension del data.frame no es correcta.")
+                if(is.data.frame(df6)){
+                        if(sum(dim(df6))!= 25){
+                                warning("Ejercicio 6: La dimension del data.frame no es correcta.")
+                        }
+                        if(sum(is.na(df6))!= 0){
+                                warning("Ejercicio 6: En el data.frame no debe haber valores NA.")
+                        }
+                        base[[6]] <- ifelse(sum(dim(df6))==25 && sum(is.na(df6))==0, 1, 0)
+                }else{
+                        warning("Ejercicio 6: El objeto 'df6' no es de tipo data.frame.")
+                        base[[6]] <- 0
                 }
-                if(sum(is.na(df6))!= 0){
-                        warning("Ejercicio 6: En el data.frame no debe haber valores NA.")
-                }
-                base[[6]] <- ifelse(sum(dim(df6))==25 && sum(is.na(df6))==0, 1, 0)
         }
+
         if(vector_objetos[7] %in% espacio){
-                if(sum(dim(df7))!= 31){
-                        warning("Ejercicio 7: La dimension del data.frame no es correcta.")
+                if(is.data.frame(df7)){
+                        if(sum(dim(df7))!= 31){
+                                warning("Ejercicio 7: La dimension del data.frame no es correcta.")
+                        }
+                        if(!all(names(df7) == paste0("Columna", 1:5))){
+                                warning("Ejercicio 7: Los nombres de las variables no son correctos. Verifique haber cargado correctamente los datos")
+                        }
+                        if(sum(apply(is.na(df7), 1, sum)==3)!=0){
+                                warning("Ejercicio 7: Debe eliminar las observaciones que contienen tres valores NA")
+                        }
+                        base[[7]] <- ifelse(sum(dim(df7))== 31 &&
+                                                all(names(df7) == paste0("Columna", 1:5)) &&
+                                                sum(apply(is.na(df7), 1, sum)==3)==0, 1, 0)
+                }else{
+                        warning("Ejercicio 7: El objeto 'df7' no es de tipo data.frame.")
+                        base[[7]] <- 0
                 }
-                if(!all(names(df7) == paste0("Columna", 1:5))){
-                        warning("Ejercicio 7: Los nombres de las variables no son correctos. Verifique haber cargado correctamente los datos")
-                }
-                if(sum(apply(is.na(df7), 1, sum)==3)!=0){
-                        warning("Ejercicio 7: Debe eliminar las observaciones que contienen tres valores NA")
-                }
-                base[[7]] <- ifelse(sum(dim(df7))== 31 &&
-                                            all(names(df7) == paste0("Columna", 1:5)) &&
-                                            sum(apply(is.na(df7), 1, sum)==3)==0, 1, 0)
         }
+
         if(vector_objetos[8] %in% espacio){
-                if(any(rownames(df8)==rownames(datasets::mtcars))){
-                        warning("Ejercicio 8: Las filas no deben estar nombradas.")
+                if(is.data.frame(df8)){
+                        if(any(rownames(df8)==rownames(datasets::mtcars))){
+                                warning("Ejercicio 8: Las filas no deben estar nombradas.")
+                        }
+                        if(!any(df8[,1]==rownames(datasets::mtcars))){
+                                warning("Ejercicio 8: la primer columna debe contener los nombres de las filas de 'mtcars'.")
+                        }
+                        base[[8]] <- ifelse(any(rownames(df8)!=rownames(datasets::mtcars)) &&
+                                                        any(df8[,1]==rownames(datasets::mtcars)), 1, 0)
+                }else{
+                        warning("Ejercicio 8: El objeto 'df7' no es de tipo data.frame.")
+                        base[[8]] <- 0
                 }
-                if(!any(df8[,1]==rownames(datasets::mtcars))){
-                        warning("Ejercicio 8: la primer columna debe contener los nombres de las filas de 'mtcars'.")
-                }
-                base[[8]] <- ifelse(any(rownames(df8)!=rownames(datasets::mtcars)) &&
-                                    any(df8[,1]==rownames(datasets::mtcars)), 1, 0)
         }
 
 
@@ -201,6 +255,24 @@ auto_eval_df <- function(nombre = NULL,
         }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
