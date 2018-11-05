@@ -42,7 +42,7 @@ El docente del curso es Nicolás Schmidt. Mail: <nicoschlab@gmail.com>,
 
 <br />
 ```{r example}
-print("Bienvenidos al curso IntRo edición 2018")
+print("Bienvenidos al curso IntRo")
 ```
 
 

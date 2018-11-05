@@ -255,25 +255,3 @@ auto_eval_df <- function(nombre = NULL,
         }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
