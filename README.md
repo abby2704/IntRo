@@ -23,6 +23,11 @@ Ejercicios:
 
 <br />
 
+¿Cómo enseñar R? Experiencia del curso IntRo. (slides
+[aquí](https://github.com/Nicolas-Schmidt/IntRo/blob/master/Ejercicios/aprendeR.pdf))
+
+<br />
+
 #### **Docentes**
 
 El docente responsable del curso es Juan Andrés Moraes. Mail:
