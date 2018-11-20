@@ -116,12 +116,15 @@ auto_eval_vector <- function(nombre = NULL,
                 if(sum(is.na(vec7))<1){
                         warning("Ejercicio 7: En el vector no hay NA")
                 }
-                base[[7]] <- ifelse(sum(is.na(vec7)) >= 1, 1, 0)
+                if(length(na.omit(vec7))!=4){
+                        warning("Ejercicio 7: En el vector hay mas numeros de los que el ejercicio pide.")
+                }
+                base[[7]] <- ifelse(sum(is.na(vec7)) >= 1 && length(na.omit(vec7))==4, 1, 0)
         }
 
         if(vector_objetos_t1[8] %in% espacio){
                 if(vec8 != 33.25){
-                        warning("Ejercicio 8: El promedio no es correcto. Lea la ayuda de la funcion 'mean()' sobre como tratar los NA")
+                        warning("Ejercicio 8: El promedio no es correcto. Verifique que el contenido del vector ´vec7´ sea correctro o lea la ayuda de la funcion 'mean()' sobre como tratar los NA")
                 }
                 base[[8]] <- ifelse(vec8 == 33.25, 1, 0)
         }
