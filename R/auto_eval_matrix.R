@@ -119,7 +119,7 @@ auto_eval_matrix <- function(nombre = NULL,
                 if(length(unique(mat6))!=100){
                         warning("Ejercicio 6: No se pueden repetir los datos, las 100 entradas de datos deben ser distintas.")
                 }
-                contenido <- all(grepl(paste(c(letters, LETTERS), collapse = "|"), mat6))
+                contenido <- any(grepl(paste(c(letters, LETTERS), collapse = "|"), mat6))
                 if(!contenido){
                         warning("Ejercicio 6: Las entradas de datos deben contener letras o palabras. No pueden tener solo numeros.")
                 }
