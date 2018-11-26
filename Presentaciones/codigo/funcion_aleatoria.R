@@ -11,3 +11,5 @@ funcion_diaria <- function(paquete = "base"){
 
 funcion_diaria()
 funcion_diaria("stats")
+
+
