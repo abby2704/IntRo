@@ -7,24 +7,19 @@ Universidad de la República (Montevideo, Uruguay). El paquete `IntRo`
 fue desarrollado para este curso. Es para que los estudiantes puedan
 autoevaluarse los ejercicios del curso.
 
-Hay un instructivo de uso
-[aquí](https://github.com/Nicolas-Schmidt/IntRo/blob/master/Ejercicios/Instructivo_IntRo.pdf).
+Hay un instructivo de uso [aquí](http://bit.ly/2DZpNF3).
 
 Ejercicios:
 
-1.  Módulo
-    [vectores](https://github.com/Nicolas-Schmidt/IntRo/blob/master/Ejercicios/Ejercicios_Modulo_vectores.pdf)
-2.  Módulo
-    [matrices](https://github.com/Nicolas-Schmidt/IntRo/blob/master/Ejercicios/Ejercicios_Modulo_matrices.pdf)
-3.  Módulo
-    [data.frame](https://github.com/Nicolas-Schmidt/IntRo/blob/master/Ejercicios/Ejercicios_Modulo_dataframe.pdf)
-4.  Módulo
-    [listas](https://github.com/Nicolas-Schmidt/IntRo/blob/master/Ejercicios/Ejercicios_Modulo_listas.pdf)
+1.  Módulo [vectores](http://bit.ly/2TP3xlX)
+2.  Módulo [matrices](http://bit.ly/2Qq74Ik)
+3.  Módulo [data.frame](http://bit.ly/2TOUfGx)
+4.  Módulo [listas](http://bit.ly/2KDAtJL)
 
 <br />
 
 ¿Cómo enseñar R? Experiencia del curso IntRo. (slides
-[aquí](https://github.com/Nicolas-Schmidt/IntRo/blob/master/Ejercicios/aprendeR.pdf))
+[aquí](http://bit.ly/2Ri6KsF))
 
 <br />
 
