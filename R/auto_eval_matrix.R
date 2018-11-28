@@ -65,9 +65,10 @@ auto_eval_matrix <- function(nombre = NULL,
                 if(sum(dim(mat2))!=7){
                         warning("Ejercicio 2: La dimension de la matriz no es correcta.")
                 }
-                if(!all(mat2 %in% 1:12)){
-                        warning("Ejercicio 2: Los numeros que debe tener la matriz son del 1 al 12.")
+                if(!(all(mat2 %in% 1:12) & mat2[1,2] == 2)){
+                        warning("Ejercicio 2: Los numeros que debe tener la matriz son del 1 al 12. Recuerde tambien que los valores deben estar ordenados por fila.")
                 }
+
                 if(is.null(dimnames(mat2))){
                         warning("Ejercicio 2: Debe ponerle nombre a las filas y a las columnas.")
                 }
