@@ -84,6 +84,7 @@ funcion_diaria <- function(package = "base", ALL = FALSE){
 
 funcion_diaria(ALL = TRUE)
 funcion_diaria(package = "tidyverse")
+funcion_diaria(package = "MASS")
 funcion_diaria("stats")
 
 
