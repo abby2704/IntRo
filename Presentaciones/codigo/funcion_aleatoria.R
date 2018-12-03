@@ -72,8 +72,8 @@ funcion_diaria <- function(package = "base", ALL = FALSE){
                 l <- ls(search()[search() == p])
                 f <- sample(l, 1)
                 if(d){
-                int <- match(r, search())
-                end <- replicate(length(2:(int[2]-1)), detach(pos = 2))
+                        int <- match(r, search())
+                        end <- replicate(length(2:(int[2]-1)), detach(pos = 2))
                 }
         }
         cat('\n - The function of the day is:', green$bold(f),
@@ -85,6 +85,7 @@ funcion_diaria <- function(package = "base", ALL = FALSE){
 funcion_diaria(ALL = TRUE)
 funcion_diaria(package = "tidyverse")
 funcion_diaria(package = "MASS")
+funcion_diaria(package = "Hmisc")
 funcion_diaria("stats")
 
 
