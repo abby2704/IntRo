@@ -50,11 +50,12 @@ funcion_diaria("stats")
 #------------------------------------------------------------
 ## sacar una funcion de todos los paquete cargados.
 ## agregando argumentos.
+## rfunction --> random function
 #------------------------------------------------------------
 require("crayon")
 require("stringr")
 
-funcion_diaria <- function(package = "base", ALL = FALSE){
+rfunction <- function(package = "base", ALL = FALSE){
 
         r <- search()
         if(ALL){
@@ -82,10 +83,10 @@ funcion_diaria <- function(package = "base", ALL = FALSE){
 
 }
 
-funcion_diaria(ALL = TRUE)
-funcion_diaria(package = "tidyverse")
-funcion_diaria(package = "MASS")
-funcion_diaria(package = "Hmisc")
-funcion_diaria("stats")
+rfunction(ALL = TRUE)
+rfunction(package = "tidyverse")
+rfunction(package = "MASS")
+rfunction(package = "Hmisc")
+rfunction("stats")
 
 
