@@ -62,7 +62,7 @@ rfunction <- function(package = "base", ALL = FALSE){
                 df <- stack(sapply(r[-1], ls))
                 f  <- sample(df[[1]], 1)
                 package <- stringr::str_extract(find(f),"(?<=:).*")
-                l <- 1:nrow(df[df$ind==find(f),])
+                l <- 1:nrow(df[df$ind == find(f),])
         }else{
                 p <- paste0("package:", package)
                 d <- FALSE
