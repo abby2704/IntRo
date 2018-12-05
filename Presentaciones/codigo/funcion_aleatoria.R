@@ -90,3 +90,22 @@ rfunction(package = "Hmisc")
 rfunction("stats")
 
 
+# agregar posibilidad de instalar paquetes de distintos lugares
+# CRAN
+# GIT
+# GITHUB
+# BIOCONDUCTOR
+# ROPEN
+
+
+
+
+
+
+
+
+
+
+
+
+
