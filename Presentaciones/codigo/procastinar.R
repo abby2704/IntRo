@@ -20,7 +20,7 @@ Rcade::games$Pacman # jugar al pacman
 # Paquete : tubeplayR
 # Disponible en GitHub
 
-# IMPORTANTE --> no funciona con windows!
+# IMPORTANTE --> no funciona con windows!, funciona en RStudio Server y Mac
 
 devtools::install_github("kazutan/tubeplayR")
 tubeplayR::tubeplay(url = ...)
