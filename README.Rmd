@@ -24,7 +24,8 @@ Este es un curso que se dicta en la Facultad de Ciencias Sociales de la
 Universidad de la República (Montevideo, Uruguay). El paquete `IntRo` fue desarrollado para este curso. Es para que los estudiantes puedan autoevaluarse los ejercicios del curso. 
 
 Hay un instructivo de uso del paquete [aquí](https://github.com/Nicolas-Schmidt/IntRo/blob/master/man/Ejercicios/Instructivo_IntRo.pdf).<br />
-Las __presentaciones__ del curso están [aquí](https://github.com/Nicolas-Schmidt/IntRo/tree/master/man/Presentaciones).
+Las __presentaciones__ del curso están [aquí](https://github.com/Nicolas-Schmidt/IntRo/tree/master/man/Presentaciones).<br />
+Código y material adicional [aquí](https://github.com/Nicolas-Schmidt/IntRo/tree/master/man/Presentaciones/codigo)
 
 Ejercicios:
 
@@ -35,7 +36,7 @@ Ejercicios:
 
  <br />
 
-¿Cómo enseñar R? Experiencia del curso IntRo. (slides [aquí](http://bit.ly/2Ri6KsF))
+¿Cómo enseñar R? Experiencia del curso IntRo. (slides [aquí](https://github.com/Nicolas-Schmidt/IntRo/blob/master/man/Presentaciones/codigo/aprendeR.pdf))
 
  <br />
 

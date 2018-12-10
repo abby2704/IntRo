@@ -13,7 +13,9 @@ autoevaluarse los ejercicios del curso.
 Hay un instructivo de uso del paquete
 [aquí](https://github.com/Nicolas-Schmidt/IntRo/blob/master/man/Ejercicios/Instructivo_IntRo.pdf).<br />
 Las **presentaciones** del curso están
-[aquí](https://github.com/Nicolas-Schmidt/IntRo/tree/master/man/Presentaciones).
+[aquí](https://github.com/Nicolas-Schmidt/IntRo/tree/master/man/Presentaciones).<br />
+Código y material adicional
+[aquí](https://github.com/Nicolas-Schmidt/IntRo/tree/master/man/Presentaciones/codigo)
 
 Ejercicios:
 
@@ -29,7 +31,7 @@ Ejercicios:
 <br />
 
 ¿Cómo enseñar R? Experiencia del curso IntRo. (slides
-[aquí](http://bit.ly/2Ri6KsF))
+[aquí](https://github.com/Nicolas-Schmidt/IntRo/blob/master/man/Presentaciones/codigo/aprendeR.pdf))
 
 <br />
 
