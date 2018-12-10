@@ -240,8 +240,8 @@ auto_eval_df <- function(nombre = NULL,
         }
 
         if(isTRUE(enviar)){
-                if(is.null(nombre) && is.null(apellido)){
-                        stop("El argumento 'nombre' y/o 'apellido' no deben ser NULL si desea enviar su nota final. Complete esos campos y vuelva a correr la funcion.")
+                if(any(c(is.null(nombre), is.null(apellido), is.null(mail)))){
+                        stop("El argumento 'nombre', 'apellido' y/o 'mail' no deben ser NULL si desea enviar su nota final. Complete esos campos y vuelva a correr la funcion.")
                 }
                 nota <- paste(notaF, "sobre 100")
                 nota_escala <- escala(notaF)

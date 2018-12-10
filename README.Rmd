@@ -10,11 +10,11 @@ output:
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
-  fig.path = "README-"
+  fig.path = "man/figures/"
 )
 ```
 
-# Introducción al software estadístico R <img src="logo.png" style="margin-left:10px;margin-bottom:5px;" width="160" align="right"></a>
+# Introducción al software estadístico R <img src="man/figures/logo.png" style="margin-left:10px;margin-bottom:5px;" width="160" align="right"></a>
 
 
 
@@ -52,7 +52,7 @@ print("Bienvenidos al curso IntRo")
 
 
 
-<center><img src="https://raw.githubusercontent.com/Nicolas-Schmidt/IntRo/master/animation.gif"></a></center>
+<center><img src="https://raw.githubusercontent.com/Nicolas-Schmidt/IntRo/master/man/figures/animation.gif"></a></center>
 
 
 

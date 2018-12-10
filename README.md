@@ -1,6 +1,6 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-Introducción al software estadístico R <img src="logo.png" style="margin-left:10px;margin-bottom:5px;" width="160" align="right"></a>
-=====================================================================================================================================
+Introducción al software estadístico R <img src="man/figures/logo.png" style="margin-left:10px;margin-bottom:5px;" width="160" align="right"></a>
+=================================================================================================================================================
 
 Este es un curso que se dicta en la Facultad de Ciencias Sociales de la
 Universidad de la República (Montevideo, Uruguay). El paquete `IntRo`
@@ -38,5 +38,5 @@ print("Bienvenidos al curso IntRo")
 ```
 
 <center>
-<img src="https://raw.githubusercontent.com/Nicolas-Schmidt/IntRo/master/animation.gif"></a>
+<img src="https://raw.githubusercontent.com/Nicolas-Schmidt/IntRo/master/man/figures/animation.gif"></a>
 </center>
