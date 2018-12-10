@@ -2,12 +2,17 @@
 Introducción al software estadístico R <img src="man/figures/logo.png" style="margin-left:10px;margin-bottom:5px;" width="160" align="right"></a>
 =================================================================================================================================================
 
+[![Build
+Status](https://img.shields.io/badge/Version-1.3.0-blue.svg)](https://img.shields.io/badge/Version-1.3.0-blue.svg)
+
 Este es un curso que se dicta en la Facultad de Ciencias Sociales de la
 Universidad de la República (Montevideo, Uruguay). El paquete `IntRo`
 fue desarrollado para este curso. Es para que los estudiantes puedan
 autoevaluarse los ejercicios del curso.
 
-Hay un instructivo de uso [aquí](http://bit.ly/2DZpNF3).
+Hay un instructivo de uso del paquete
+[aquí](http://bit.ly/2DZpNF3).<br /> Las **presentaciones** del curso
+están [aquí](http://bit.ly/2DZpNF3).
 
 Ejercicios:
 
