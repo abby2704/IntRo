@@ -124,7 +124,7 @@ auto_eval_vector <- function(nombre = NULL,
 
         if(vector_objetos_t1[8] %in% espacio){
                 if(vec8 != 33.25){
-                        warning("Ejercicio 8: El promedio no es correcto. Verifique que el contenido del vector ´vec7´ sea correctro o lea la ayuda de la funcion 'mean()' sobre como tratar los NA")
+                        warning("Ejercicio 8: El promedio no es correcto. Verifique que el contenido del vector 'vec7' sea correctro o lea la ayuda de la funcion 'mean()' sobre como tratar los NA")
                 }
                 base[[8]] <- ifelse(vec8 == 33.25, 1, 0)
         }
@@ -157,9 +157,6 @@ auto_eval_vector <- function(nombre = NULL,
         if(vector_objetos_t1[12] %in% espacio){
                 if(!is.character(vec12)){
                         warning("Ejercicio 12: El vector debe ser de tipo 'character'. Puede chequearlo con la funcion 'typeof()'")
-                        }
-                if(length(vec12)!=1){
-                        warning("Ejercicio 12: El largo del vector no es correcto. El vector 'vec1' tiene 10 elementos y el 'vec12' debe tener 1 solo elemento")
                         }
                 if(length(vec12)!=1){
                         warning("Ejercicio 12: El largo del vector no es correcto. El vector 'vec1' tiene 10 elementos y el 'vec12' debe tener 1 solo elemento")
