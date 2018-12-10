@@ -11,15 +11,20 @@ fue desarrollado para este curso. Es para que los estudiantes puedan
 autoevaluarse los ejercicios del curso.
 
 Hay un instructivo de uso del paquete
-[aquí](http://bit.ly/2DZpNF3).<br /> Las **presentaciones** del curso
-están [aquí](http://bit.ly/2DZpNF3).
+[aquí](https://github.com/Nicolas-Schmidt/IntRo/blob/master/man/Ejercicios/Instructivo_IntRo.pdf).<br />
+Las **presentaciones** del curso están
+[aquí](https://github.com/Nicolas-Schmidt/IntRo/tree/master/man/Presentaciones).
 
 Ejercicios:
 
-1.  Módulo [vectores](http://bit.ly/2TP3xlX)
-2.  Módulo [matrices](http://bit.ly/2Qq74Ik)
-3.  Módulo [data.frame](http://bit.ly/2TOUfGx)
-4.  Módulo [listas](http://bit.ly/2KDAtJL)
+1.  Módulo
+    [vectores](https://github.com/Nicolas-Schmidt/IntRo/blob/master/man/Ejercicios/Ejercicios_Modulo_vectores.pdf)
+2.  Módulo
+    [matrices](https://github.com/Nicolas-Schmidt/IntRo/blob/master/man/Ejercicios/Ejercicios_Modulo_matrices.pdf)
+3.  Módulo
+    [data.frame](https://github.com/Nicolas-Schmidt/IntRo/blob/master/man/Ejercicios/Ejercicios_Modulo_dataframe.pdf)
+4.  Módulo
+    [listas](https://github.com/Nicolas-Schmidt/IntRo/blob/master/man/Ejercicios/Ejercicios_Modulo_listas.pdf)
 
 <br />
 
