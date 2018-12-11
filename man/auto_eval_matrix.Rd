@@ -3,6 +3,9 @@
 \name{auto_eval_matrix}
 \alias{auto_eval_matrix}
 \title{Autoevaluacion de 'Ejercicios II' (Modulo Matrices).}
+\source{
+http://bit.ly/Instructivo_package_IntRo
+}
 \usage{
 auto_eval_matrix(nombre = NULL, apellido = NULL, mail = NULL,
   intentos = 1, enviar = FALSE, summary = TRUE)
@@ -30,6 +33,18 @@ a llegar al mail que cargo en el argumento \code{mail} de esta funcion.}
 argumento es contar con un resumen de la situacion de todos los ejercicios
 correspondientes al modulo de matrices.}
 }
+\value{
+\itemize{
+
+    \item{Si el argumento \code{summary} es \code{TRUE}}{ la funcion va a devolver
+    un \code{print} del estado de los ejercicios. El resultado de los ejercicioes
+    pueden estar en tres categorias: respuesta 'Correcta', ' Incorrecta' o '
+    Incompleta'.}
+    \item{Si el argumento \code{summary} es \code{FALSE}}{ la funcion no va a imprimir
+    en la consola ninun resulatdos. Solo se van a ver los Errores y las Advertencias
+    si son necesarias.}
+    }
+}
 \description{
 Es una funcion que permite autoevaluar los ejercicios del modulo
     de matrices del curso Introduccion al software estadistico R.
@@ -43,5 +58,8 @@ auto_eval_matrix(nombre = "Nicolas",
                  mail = NULL,
                  enviar = FALSE,
                  intentos = 3,
-                 summary = TRUE)
+                 summary = FALSE)
+}
+\author{
+Nicolas Schmidt \email{nschmidt@cienciassociales.edu.uy}
 }

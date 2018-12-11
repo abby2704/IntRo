@@ -3,6 +3,9 @@
 \name{auto_eval_vector}
 \alias{auto_eval_vector}
 \title{Autoevaluacion de 'Ejercicios I' (Modulo Vectores).}
+\source{
+http://bit.ly/Instructivo_package_IntRo
+}
 \usage{
 auto_eval_vector(nombre = NULL, apellido = NULL, mail = NULL,
   intentos = 1, enviar = FALSE, summary = TRUE)
@@ -30,6 +33,18 @@ a llegar al mail que cargo en el argumento \code{mail} de esta funcion.}
 argumento es contar con un resumen de la situacion de todos los ejercicios
 correspondientes al modulo de vectores.}
 }
+\value{
+\itemize{
+
+    \item{Si el argumento \code{summary} es \code{TRUE}}{ la funcion va a devolver
+    un \code{print} del estado de los ejercicios. El resultado de los ejercicioes
+    pueden estar en tres categorias: respuesta 'Correcta', ' Incorrecta' o '
+    Incompleta'.}
+    \item{Si el argumento \code{summary} es \code{FALSE}}{ la funcion no va a imprimir
+    en la consola ninun resulatdos. Solo se van a ver los Errores y las Advertencias
+    si son necesarias.}
+    }
+}
 \description{
 Es una funcion que permite autoevaluar los ejercicios del modulo
     sobre vectores del curso Introduccion al software estadistico R.
@@ -44,4 +59,7 @@ auto_eval_vector(nombre = "Nicolas",
                  enviar = FALSE,
                  intentos = 3,
                  summary = TRUE)
+}
+\author{
+Nicolas Schmidt \email{nschmidt@cienciassociales.edu.uy}
 }

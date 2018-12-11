@@ -18,6 +18,22 @@
 #' @param summary Valor logico que por defetco es \code{TRUE}. La utilidad de este
 #'     argumento es contar con un resumen de la situacion de todos los ejercicios
 #'     correspondientes al modulo de vectores.
+#' @return
+#'     \itemize{
+#'
+#'     \item{Si el argumento \code{summary} es \code{TRUE}}{ la funcion va a devolver
+#'     un \code{print} del estado de los ejercicios. El resultado de los ejercicioes
+#'     pueden estar en tres categorias: respuesta 'Correcta', ' Incorrecta' o '
+#'     Incompleta'.}
+#'     \item{Si el argumento \code{summary} es \code{FALSE}}{ la funcion no va a imprimir
+#'     en la consola ninun resulatdos. Solo se van a ver los Errores y las Advertencias
+#'     si son necesarias.}
+#'     }
+#'
+#' @author Nicolas Schmidt \email{nschmidt@cienciassociales.edu.uy}
+#'
+#' @source http://bit.ly/Instructivo_package_IntRo
+#'
 #'
 #' @examples
 #'
@@ -116,10 +132,10 @@ auto_eval_vector <- function(nombre = NULL,
                 if(sum(is.na(vec7))<1){
                         warning("Ejercicio 7: En el vector no hay NA")
                 }
-                if(length(na.omit(vec7))!=4){
+                if(length(stats::na.omit(vec7))!=4){
                         warning("Ejercicio 7: En el vector hay mas numeros de los que el ejercicio pide.")
                 }
-                base[[7]] <- ifelse(sum(is.na(vec7)) >= 1 && length(na.omit(vec7))==4, 1, 0)
+                base[[7]] <- ifelse(sum(is.na(vec7)) >= 1 && length(stats::na.omit(vec7))==4, 1, 0)
         }
 
         if(vector_objetos_t1[8] %in% espacio){

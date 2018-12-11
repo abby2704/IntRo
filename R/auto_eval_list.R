@@ -19,6 +19,24 @@
 #'     argumento es contar con un resumen de la situacion de todos los ejercicios
 #'     correspondientes al modulo de listas.
 #'
+#' @return
+#'     \itemize{
+#'
+#'     \item{Si el argumento \code{summary} es \code{TRUE}}{ la funcion va a devolver
+#'     un \code{print} del estado de los ejercicios. El resultado de los ejercicioes
+#'     pueden estar en tres categorias: respuesta 'Correcta', ' Incorrecta' o '
+#'     Incompleta'.}
+#'     \item{Si el argumento \code{summary} es \code{FALSE}}{ la funcion no va a imprimir
+#'     en la consola ninun resulatdos. Solo se van a ver los Errores y las Advertencias
+#'     si son necesarias.}
+#'     }
+#'
+#' @author Nicolas Schmidt \email{nschmidt@cienciassociales.edu.uy}
+#'
+#' @source http://bit.ly/Instructivo_package_IntRo
+#'
+#'
+#'
 #' @examples
 #'
 #' lista1 <- list(datasets::iris)
