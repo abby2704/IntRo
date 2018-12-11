@@ -1,4 +1,4 @@
-#' @title Funcion de busqueda aleatoria de funciones de uno o todos los paquetes
+#' @title Busqueda aleatoria de funciones de uno o todos los paquetes
 #'     instalados.
 #'
 #' @description Esta funcion permite obtener una funcion aleatoria de alguno de los
