@@ -22,3 +22,6 @@ escala(82)
 escala(88.5)
 
 }
+\author{
+Nicolas Schmidt \email{nschmidt@cienciassociales.edu.uy}
+}

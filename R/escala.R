@@ -7,6 +7,8 @@
 #'
 #' @return Numero entero entre 0 y 10.
 #'
+#' @author Nicolas Schmidt \email{nschmidt@cienciassociales.edu.uy}
+#'
 #' @examples
 #'
 #' escala(82)
