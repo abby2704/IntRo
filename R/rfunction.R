@@ -23,6 +23,11 @@
 #' @source http://bit.ly/Instructivo_package_IntRo
 #'
 #'
+#' @details Si se selecciona un paquete que no esta cargado en la sesion
+#'     de trabajo no se afecta la ruta de busqueda de nombres de R. El
+#'     paquete seleccionado no va a quedar cargado en la ruta actual.
+#'     Puede verificar esto con \code{search()}.
+#'
 #' @examples
 #'
 #' rfunction()
@@ -37,10 +42,10 @@ rfunction <- function(package = "base", ALL = FALSE){
 
         r <- search()
         if(ALL){
-                df <- stack(sapply(r[-1], ls))
+                df <- utils::stack(sapply(r[-1], ls))
                 f  <- sample(df[[1]], 1)
-                package <- stringr::str_extract(find(f),"(?<=:).*")
-                l <- 1:nrow(df[df$ind == find(f),])
+                package <- stringr::str_extract(utils::find(f),"(?<=:).*")
+                l <- 1:nrow(df[df$ind == utils::find(f),])
         }else{
                 p <- paste0("package:", package)
                 d <- FALSE
@@ -57,6 +62,6 @@ rfunction <- function(package = "base", ALL = FALSE){
         }
         cat('\n - The function of the day is:', crayon::green$bold(f),
             '\n - Package:', crayon::blue(package),'-->', length(l), 'functions')
-        help(f, package = noquote(package))
+        utils::help(f, package = noquote(package))
 
 }

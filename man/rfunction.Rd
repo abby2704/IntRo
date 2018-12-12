@@ -30,6 +30,12 @@ Esta funcion permite obtener una funcion aleatoria de alguno de los
     la idea es seleccionar al azar una funcion y la funcion que salga sorteada
     es con la que se debe experimentar para aprender sobre ella.
 }
+\details{
+Si se selecciona un paquete que no esta cargado en la sesion
+    de trabajo no se afecta la ruta de busqueda de nombres de R. El
+    paquete seleccionado no va a quedar cargado en la ruta actual.
+    Puede verificar esto con \code{search()}.
+}
 \examples{
 
 rfunction()
