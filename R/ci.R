@@ -28,12 +28,9 @@
 #'
 #'
 #' @examples
-#'
 #' ci()
 #' ci(c("character", "numeric"))
-
 #' @export
-#'
 
 ci <- function(type = c("logical", "integer", "double","raw", "complex", "character")){
 
