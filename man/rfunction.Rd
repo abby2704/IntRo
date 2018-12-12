@@ -2,7 +2,7 @@
 % Please edit documentation in R/rfunction.R
 \name{rfunction}
 \alias{rfunction}
-\title{Funcion de busqueda aleatoria de funciones de uno o todos los paquetes
+\title{Busqueda aleatoria de funciones de uno o todos los paquetes
     instalados.}
 \source{
 http://bit.ly/Instructivo_package_IntRo
