@@ -45,7 +45,7 @@ ci <- function(type = c("logical", "integer", "double","raw", "complex", "charac
         for(i in 1:dl) for(j in 1:dl) {
                 tabla[i, j] <- typeof(c(vector(type[i]), vector(type[j])))
         }
-        tabla[which(upper.tri(tabla) == TRUE)] <- ""
+        tabla[upper.tri(tabla)] <- ""
         g <- paste(rep("-", max(nchar(type))), collapse = "")
         tabla <- cbind(c("", rep("|", nrow(tabla))),
                        rbind(rep(g, ncol(tabla)),tabla))

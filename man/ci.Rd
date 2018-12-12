@@ -2,7 +2,7 @@
 % Please edit documentation in R/ci.R
 \name{ci}
 \alias{ci}
-\title{Coerciones implicitas.}
+\title{Coerciones implicitas}
 \source{
 http://bit.ly/Instructivo_package_IntRo
 }
@@ -34,7 +34,6 @@ Esta funcion devuelve el resultado del tipo de datos resultante
     vector atomico es \code{typeof()}
 }
 \examples{
-
 ci()
 ci(c("character", "numeric"))
 }
