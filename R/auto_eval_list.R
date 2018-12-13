@@ -65,7 +65,7 @@ auto_eval_list <- function(nombre = NULL,
         vector_objetos <- paste0("lista", 1:cant_ej)
         faltantes <- vector_objetos %in% espacio
         if(sum(faltantes)==0){
-                stop("En el aspacio de trabajo no hay ninguno de los objeto del ejercicio creados. Recuerde que debe utilizar los mombres que figuran en los ejercicios")
+                stop("En el espacio de trabajo no hay ninguno de los objeto del ejercicio creados. Recuerde que debe utilizar los mombres que figuran en los ejercicios")
         }
 
         base <- as.list(stats::setNames(rep(NA, cant_ej), paste("Ejercicio", 1:cant_ej)))
@@ -152,25 +152,34 @@ auto_eval_list <- function(nombre = NULL,
         }
 
         if(vector_objetos[4] %in% espacio){
-                 if(is.list(lista4)){
-                         if(length(lista4)==1){
-                                 if(sum(dim(lista4[[1]]))!=15){
-                                         warning("Ejercicio 4: La dimension de la matriz no es correcta.")
-                                 }
-                                 if(!all(c(matrix(lista4[[1]], 11, 4, byrow=TRUE))==c(0:10, 10:20, 30:40, 40:50))){
-                                         warning("Ejercicio 4: Los vectores pegados no son los correctos.")
-                                 }
-                                 base[[4]] <- ifelse(sum(dim(lista4[[1]]))==15 &&
-                                                             all(c(matrix(lista4[[1]], 11, 4, byrow=TRUE))==c(0:10, 10:20, 30:40, 40:50)), 1, 0)
-                         }else{
-                                 warning("Ejercicio 4: El largo de la lista no es correcto.")
-                                 base[[4]] <- 0
-                         }
-                 } else{
-                         warning("Ejercicio 4: El objeto 'lista4' debe ser de tipo 'list'.")
-                         base[[4]] <- 0
-                 }
-         }
+                if(is.list(lista4)){
+                        if(length(lista4)==1){
+                                if(is.matrix(lista4[[1]])){
+                                        if(all(c(4,11) == dim(lista4[[1]]))){
+
+                                                if(!all(rbind(0:10, 10:20, 30:40, 40:50) == lista4[[1]])){
+                                                        warning("Ejercicio 4: Los vectores pegados no son los correctos.")
+                                                }else{
+                                                        base[[4]] <- 1
+                                                }
+                                        }else{
+                                                warning("Ejercicio 4: La dimension de la matriz no es correcta.")
+                                                base[[4]] <- 0
+                                        }
+
+                                }else{
+                                        warning("Ejercicio 4. La lista debe tener una matriz")
+                                        base[[4]] <- 0
+                                }
+                        }else{
+                                warning("Ejercicio 4: El largo de la lista no es correcto.")
+                                base[[4]] <- 0
+                        }
+                } else{
+                        warning("Ejercicio 4: El objeto 'lista4' debe ser de tipo 'list'.")
+                        base[[4]] <- 0
+                }
+        }
 
         if(vector_objetos[5] %in% espacio){
                  if(is.list(lista5)){
